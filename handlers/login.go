@@ -4,6 +4,6 @@ import (
 	"net/http"
 )
 
-func login(w http.ResponseWriter, r *http.Request) {
+func Login(w http.ResponseWriter, r *http.Request) {
 	//todo
 }
