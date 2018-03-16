@@ -18,8 +18,8 @@ type Provider interface {
 }
 
 type Session interface {
-	Set(key, value interface{}) error //set session value
-	Get(key interface{}) interface{}  //get session value
-	Delete(key interface{}) error     //delete session value
-	SessionID() string                //back current sessionID
+	Set(key, value interface{}) error //valueをセット
+	Get(key interface{}) interface{}  //valueを取得
+	Delete(key interface{}) error     //kyeにもとずいて削除
+	SessionID() string                //sidを取得
 }
