@@ -7,6 +7,7 @@ import (
 	"./handlers"
 )
 
+
 func main() {
 	server := http.Server{
 		Addr: "localhost:8080",
@@ -15,4 +16,5 @@ func main() {
 	http.HandleFunc("/login", handlers.Login)
 	http.HandleFunc("/callback", handlers.Callback)
 	server.ListenAndServe()
+	initSesion()
 }
